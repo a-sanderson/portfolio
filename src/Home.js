@@ -18,10 +18,7 @@ const Home = props => {
         return(
             <main style={{height: "1000px", position: "relative", zIndex: "0"}}>
                 <section className="homeTop">
-                    <div className="overlay"></div>
-                    
-                        <h3>AARON SANDERSON</h3>
-                    
+                    <h3>AARON SANDERSON</h3>
                     <h1>UX focused web developer with an eye for design based out of Salt Lake City, Utah. </h1>
                 </section>
                 <section className="homeBottom">
