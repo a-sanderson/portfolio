@@ -22,7 +22,7 @@ const Home = props => {
                     <h1>UX focused web developer with an eye for design based out of Salt Lake City, Utah. </h1>
                 </section>
                 <section className="homeBottom">
-                    <div style={{display: "flex", justifyContent: "space-evenly", marginBottom: "30px", width: "100vw", height: "auto" }}>
+                    <div style={{display: "flex", justifyContent: "space-evenly", marginBottom: "30px", width: "100vw", height: "300px" }}>
                          <h3>About Me</h3><div className="imageContainer"></div>  
                     </div>
                     <div id="about" className="aboutContainerL">
