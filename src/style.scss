@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    
+}
+$titleFont: 'Playfair Display', serif;
+$subFont: 'Raleway', sans-serif;
+@mixin subHeadStyle {
+        font-family: $titleFont;
+        font-size: 2.5em;
+        align-self: center;
+}
+@mixin for-size($size){
+    @if $size == tablet{
+        @media (min-width: 700px){@content;}
+    }@else if $size == desktop{
+        @media (min-width: 1000px){@content;}
+    }@else if $size == phone{
+        @media (max-width: 700px){@content;}
+    }
+}
+@mixin porfolioLinks{
+    font-family: $subFont;
+    text-decoration: none;
+    border: 3px inset #BC4123;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    color: black;
+}
+
+
+p{
+    font-family: $subFont;
+}
+span{
+    color: #BC4123;
+    font-weight: 800px
+}
+
+.header{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index:1000;
+    h2{
+        color: white;
+        font-family: $titleFont;
+        font-size: 1.8em;
+
+
+    }
+}
+.whiteClass{
+    display: none;
+}
+.orangeClass{
+    display: block !important;
+}
+
+.headerScroll{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index:1000;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+
+    h2{
+        color:#BC4123;
+        font-family: $titleFont;
+        font-size: 1.8em;
+
+
+    }
+}
+.homeTop{
+    background-image: url("https://images.unsplash.com/photo-1451481086097-f6a15d5f8d18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+    background-position: center;
+    -webkit-filter: grayscale(100%);
+    filter:grayscale(80%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    height: 50%;
+    z-index: 0;
+    position: relative;
+    h1{
+        text-align: center;
+        color: white;
+        grid-column: 1/4;
+        grid-row: 3/5;
+        font-family: $titleFont;
+        font-size: 1.5em;
+        z-index: 10;
+    }
+
+// .overlay{
+//     height: 100%;
+//     width: 100%;
+//     background-color: #BC4123;
+//     opacity: .5;
+//     z-index: 7;
+//     position: fixed;
+    
+// }
+    
+}
+.homeBottom{
+    height: 40%;
+    margin-bottom: 260px;
+    display: flex;
+    flex-direction: column;
+    h3{
+        @include subHeadStyle();
+        margin-top: 40px;
+        margin-bottom: 30px;
+        @include for-size(tablet){
+            font-size: 3.5em
+            
+        }
+        
+        
+    }
+  
+    a{
+        text-decoration: none;
+        font-size: 1.5em;
+        align-self: center;
+        margin-top: 80px !important;
+        color: black;
+        border: 3px ridge #BC4123;
+
+        @include for-size(tablet){
+            display:none;
+        }
+    }
+}
+
+
+.projectTitle{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        justify-self: center;
+        z-index: 10;
+        position: fixed;
+    h3{
+        color: white;
+        padding-bottom: 0;
+        font-family: $subFont;
+        font-size: 2.2em;
+        z-index: 10;
+        position: relative;
+    }
+    h3:after{
+    content: " ";
+    z-index: 20;
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    background-color:#BC4123;
+    height: 2px;
+    width: 100px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    }
+}
+.imageContainer{
+    height: 150px;
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 75px;
+    margin-right: 10px;
+    background-image: url("aarons.jpg");
+    background-position: "center";
+    background-position-y: 25%;
+    background-size: cover;
+    
+
+}
+.aaron{
+    height: 100%;
+    width: 100%;
+    border-radius: 60px;
+}
+.aboutContainer{
+    @include for-size(tablet){
+        display:none;
+    }
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin-bottom: 15px;
+    
+    .container1{
+        margin-right: 15px;
+        flex: 1 1 auto;
+        position: relative;
+        text-align: left;
+        border-right: 2px ridge #BC4123;
+        line-height: 25px;
+        width: 50%;
+    }
+    
+    h5{
+        font-family: $subFont;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    
+}
+
+.aboutContainerL{
+    @include for-size(phone){
+        display: none;
+    }
+}
+.card{
+    height: 140px;
+    width: 325px;
+    border: 1px grey ridge;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.iconContainer{
+    display: grid;
+    grid-template-columns: repeat(1fr, 1);
+    margin-top: 90px;
+    margin-bottom: 50px;
+
+    @include for-size(tablet){
+        display:none;
+    }
+
+}
+.iconContainerL{
+    @include for-size(phone){
+        display: none;
+    }
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.vertConainer{
+    display: flex;
+    flex-direction: column;
+
+}
+.portfolioContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+
+    h3{
+        @include subHeadStyle()
+    }
+
+}
+.projects{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 40px;
+    h4{
+        font-family: $subFont;
+        font-size: 1.4em;
+        font-weight: 800px;
+    }
+    h4:after{
+        content: " ";
+        // position: absolute;
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        background-color:#BC4123;
+        height: 2px;
+        width: 100px;
+        box-shadow: 0 1px 1px rgba(0,0,0,.1);
+        }
+    p{
+        line-height: 20px;
+    }
+    a{
+        @include porfolioLinks()
+    }
+}
+.red{
+    background-color: red;
+}
+.mediaContainer{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between !important;
+}
+.mobilePic{
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    background-image: url("./aarons.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.mobileMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 2000;
+    height: 100vh;
+    width: 400px;
+    background-color: #BC4123;
+    transition: all 1s ease-in-out;
+
+    a{
+        color: white;
+        font-family: $subFont;
+        text-decoration: none;
+        margin-left: 20px;
+        
+    }
+
+}
+
+.footer{
+    height: 600px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #BC4123;
+
+    h2{
+        @include subHeadStyle()
+    }
+    a{
+        margin-left: 80px;
+        margin-right: 80px;
+        @include for-size(phone){
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    input:nth-child(1) {
+        width: 220px;
+        height: 50px;
+        margin-bottom: 35px;
+        border: 3px black ridge;
+       
+
+    }
+    textarea {
+        width: 400px;
+        height: 150px;
+        margin-bottom: 35px;
+        border: 3px black ridge;
+        @include for-size(phone){
+            width: 300px
+        }
+    }
+    a{
+        @include porfolioLinks();
+        background-color: white;
+        width: 120px;
+        height: 35px;
+        text-align: center;
+        font-size: 1.8em;
+        margin-left: 0 !important;
+        margin-right: 0 !important
+    }
+}
+
+
+
+@media only screen and (min-width: 700px ) {
+    .iconContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .imageContainer{
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        margin-right: 10px;
+        ///make image background image to make perfect circle and help responsive
+        
+    
+    }
+  .portfolioContainer > h3{
+      font-size: 3.5em !important;
+  }
+
+}
