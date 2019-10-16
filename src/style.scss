@@ -167,6 +167,10 @@ span{
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 30px;
+    @include for-size(tablet){
+        height: 500px;
+        margin-bottom: 50px;
+    }
 }
 .imageContainer{
     height: 150px;
