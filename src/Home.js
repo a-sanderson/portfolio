@@ -29,7 +29,7 @@ const Home = props => {
                         <p style={{textAlign:"center",marginLeft: 15, marginRight: 15, marginBottom: 40, marginTop: 40, lineHeight: 1.5}}>Originally from Knoxville, Tennessee, I am a developer currently residing in Utah. I enjoy creating aesthetically pleasing web and mobile apps that are geared towards a pleasant user experience. I have been learning how to code on my own for the past year, but recently graduated from <span>V-School</span>, a 12 week immersive development program based out of Salt Lake City. I also studied at East Tennessee State University, and took a professional certification course for Project Management through the University of Utah. When I am not coding I am snowboarding or playing golf.<br></br><br></br>I have been working with the following technologies: </p>
                     </div>
                     <div  className="iconContainerL">
-                        <div style={{display: "flex", flexDirection:"row", justifyContent: "space-evenly", marginBottom: "20px"}}>
+                        <div style={{display: "flex", flexDirection:"row", justifyContent: "space-evenly", marginBottom: "20px", marginTop: 15}}>
                             <div style={{marginBottom: 15, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: ""}} >
                                 <FontAwesomeIcon icon={faGit} size="2x"  />
                                 <span>Git & GitHub</span>
