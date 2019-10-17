@@ -169,7 +169,7 @@ span{
     margin-bottom: 30px;
     @include for-size(tablet){
         height: 500px;
-        margin-bottom: 50px;
+        margin-bottom: 50px !important;
     }
 }
 .imageContainer{
