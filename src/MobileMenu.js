@@ -8,11 +8,9 @@ const MobileMenu = props => {
     return(
         <div className="mobileMenu" style={props.style}>
             <div style={{alignSelf: "flex-end", top:5, position: "fixed"}} onClick={props.onClick}><FontAwesomeIcon   icon={faTimes} color="white" size= "2x" /></div>
+            <h2>Aaron Sanderson</h2>
             <div className="mobilePic"></div>
-            <a href="#about">about</a>
-            <a href="#tech">skills</a>
-            <a href="#porfolio">portfolio</a>
-            <a href="https://docs.google.com/document/d/1UwmmdADaAkta0yfXRvFhvljbTCpUO0AzrSEifXKNvvM/edit?usp=sharing">resume</a>
+            <h2>ronsanderson09@gmail.com</h2>
             <div className="mediaContainer">
                 <a href= "https://github.com/a-sanderson"><FontAwesomeIcon icon={faGithub} color="white" size= "3x" /></a>
                 <a href="https://www.linkedin.com/in/aaron-sanderson/"><FontAwesomeIcon icon={faLinkedin} color="white" size= "3x" /></a>

@@ -35,6 +35,9 @@ span{
     color: #BC4123;
     font-weight: 800px
 }
+h2{
+    font-family: $subFont;
+}
 
 .header{
     padding: 0;
@@ -202,7 +205,8 @@ span{
     height: 40%;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-left: 10px;
     align-items: top;
     margin-bottom: 15px;
     
