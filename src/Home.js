@@ -103,7 +103,7 @@ const Home = props => {
                         <p style={{textAlign:"center",marginLeft: 15, marginRight: 15, marginBottom: 40, lineHeight: 1.5}}>Below are some of the recent projects I have been working on. I am currently working on these to get them production ready, but the goal was to get these projects to "MVP" status. They are meant to showcase my front end capabilities and basic knowledge of building my own server and API with help of third party libraries (express and mongoose).</p>
                         <div className="projects">
                             <h4>Pick a Pup App</h4>
-                            <p>App that allows users to research dog breeds and search for dogs up for adoption relative to their zip code and a mile radius. Data is provided from TheDogAPI and Petfinder.com API</p>
+                            <p>App that allows users to research dog breeds and search for dogs up for adoption relative to their zip code whithin a mile radius. Data is provided from TheDogAPI and Petfinder.com API</p>
                             <div style={{height: 250, width: 120}}><img style={{height: "100%", width: "100%"}} alt="pup" src={require("./pickapup.png")}></img></div>
                             <a href="https://github.com/a-sanderson/assignments/tree/master/projects/pick-a-pup">check the code</a>
                             <a href="http://pickapup.surge.sh">see it live</a>
@@ -111,7 +111,7 @@ const Home = props => {
                         <div className="projects">
                             <h4>Fashion Hub </h4>
                             <p>e-commerce app built to demonstrate knowledge of creating multiple routes with queries on the backend. Also, many routes on the front-end, and use of re-usable, dynamic components. </p>
-                            <p>Current ToDo: Working on a re-direct after log in. Also at the moment you must sign-up and be logged in to use all the sites features.</p>
+                            <p>Current ToDo: Working on a re-direct after log in.</p>
                             <div style={{height: 250, width: 120}}><img style={{height: "100%", width: "100%"}} alt="pup" src={require("./fashion.png")}></img></div>
                             <a href="https://github.com/a-sanderson/group-project">check the code</a>
                             <a href="https://freshfashionhub.herokuapp.com">see it live</a>
