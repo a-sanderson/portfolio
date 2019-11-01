@@ -106,7 +106,7 @@ const Home = props => {
                             <p>App that allows users to research dog breeds and search for dogs up for adoption relative to their zip code whithin a mile radius. Data is provided from TheDogAPI and Petfinder.com API</p>
                             <div style={{height: 250, width: 120}}><img style={{height: "100%", width: "100%"}} alt="pup" src={require("./pickapup.png")}></img></div>
                             <a href="https://github.com/a-sanderson/assignments/tree/master/projects/pick-a-pup">check the code</a>
-                            <a href="pickapup.netlify.com">see it live</a>
+                            <a href="https://pickapup.netlify.com">see it live</a>
                         </div>
                         <div className="projects">
                             <h4>Fashion Hub </h4>
